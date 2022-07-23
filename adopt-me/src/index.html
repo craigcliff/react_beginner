@@ -11,19 +11,6 @@
     <div id="root">not rendered</div>
     <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
-    <script>
-        const App = () => {
-            //  This is how you create React render elements without using JSX 
-            //  These functions need to be fast (dont add side effects inside render functions)
-            return React.createElement(
-                "div",
-                {},
-                React.createElement("h1", {}, "Adopt Me!")
-            );
-        };
-        // Creating instance of an App
-        ReactDOM.render(React.createElement(App), document.getElementById("root")
-        );
-    </script>
+    <script src="./App.js"></script>
 </body>
 </html>
