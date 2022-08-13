@@ -2,13 +2,7 @@ import { Component } from "react";
 import { useParams } from "react-router-dom";
 
 class Details extends Component {
-  constructor(props) {
-    // first thing you call is super(props)
-    super(props);
-
-    this.state = { loading: true };
-  }
-
+  state = { loading: true };
   //coponentDidMount similar to useEffect
   async componentDidMount() {
     const res = await fetch(
